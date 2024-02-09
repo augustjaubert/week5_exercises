@@ -26,7 +26,7 @@ FileManager::~FileManager()
 
 void FileManager::getData()
 {
-    int n;
+    int n = 0;
     while (std::fscanf(f, "%d", &n) != EOF)
     {
         std::cout << n << std::endl;
@@ -35,8 +35,9 @@ void FileManager::getData()
 
 void FileManager::printProcessedFile()
 {
-    int n;
-    while (std::fscanf(f, "%d", &n) != EOF)
+    std::ifstream filestream(fileName);
+    int n = 0;
+    while (filestream >> n)
     {
         std::cout << n << "! = " << factorial(n) << std::endl;
     }
