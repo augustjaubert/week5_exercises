@@ -1,20 +1,27 @@
-#pragma once 
+#pragma once
 #include <memory>
 #include <vector>
 #include <functional>
 
-
-class SimpsonIntegrator
+class Integrator
 {
-    public:
+public:
+    Integrator();
+
+    virtual double integrate(const double delta_x, const std::vector<double> &ys);
+};
+
+class SimpsonIntegrator : public Integrator
+{
+public:
     SimpsonIntegrator();
 
     double integrate(const double delta_x, const std::vector<double> &ys);
 };
 
-class TrapeziumIntegrator
+class TrapeziumIntegrator : public Integrator
 {
-    public:
+public:
     TrapeziumIntegrator();
 
     double integrate(const double delta_x, const std::vector<double> &ys);
@@ -22,16 +29,15 @@ class TrapeziumIntegrator
 
 class DiscreteFunction
 {
-    public:
+public:
     DiscreteFunction(std::vector<double> y, double x_min, double x_max);
-
     double integrate();
+    void setIntegrator(std::unique_ptr<Integrator> &int_ptr);
 
-    private:
-    std::unique_ptr<TrapeziumIntegrator> integrator;
+private:
+    std::unique_ptr<Integrator> integrator;
     std::vector<double> ys;
     double min_x;
     double max_x;
     double delta_x;
 };
-

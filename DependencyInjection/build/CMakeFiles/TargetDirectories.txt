@@ -1,0 +1,5 @@
+/Users/augustjaubert/Downloads/week5_exercises/DependencyInjection/build/CMakeFiles/edit_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/DependencyInjection/build/CMakeFiles/rebuild_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/DependencyInjection/build/source/CMakeFiles/DependencyInjection.dir
+/Users/augustjaubert/Downloads/week5_exercises/DependencyInjection/build/source/CMakeFiles/edit_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/DependencyInjection/build/source/CMakeFiles/rebuild_cache.dir
