@@ -1,0 +1,5 @@
+/Users/augustjaubert/Downloads/week5_exercises/RAII/build/CMakeFiles/edit_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/RAII/build/CMakeFiles/rebuild_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/RAII/build/source/CMakeFiles/RAII.dir
+/Users/augustjaubert/Downloads/week5_exercises/RAII/build/source/CMakeFiles/edit_cache.dir
+/Users/augustjaubert/Downloads/week5_exercises/RAII/build/source/CMakeFiles/rebuild_cache.dir
